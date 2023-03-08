@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ContosoCompanion'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FADE827E011E448F903C85F2FA4280DD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EDD980EFEAE042679B3FEABE55D462D5 }}
           package: .
