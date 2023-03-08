@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CIBC Connect</title>
+    </head>
+    <body>
+        <h4>CIBC Connect</h4>
+        <input type="hidden" id="user-access-token"
+            type="text"
+            placeholder="User access token"
+            value="eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwNiIsIng1dCI6Im9QMWFxQnlfR3hZU3pSaXhuQ25zdE5PU2p2cyIsInR5cCI6IkpXVCJ9.eyJza3lwZWlkIjoiYWNzOjY0MDlkZTlmLWEwNzktNDYwNi1hNWYxLTE0ZDk3OWE4YWQ2MF8wMDAwMDAxNS02NjgzLTg0OTAtYTE2Ni01NjNhMGQwMGMxY2QiLCJzY3AiOjE3OTIsImNzaSI6IjE2Njk3Nzk4MDgiLCJleHAiOjE2Njk4NjYyMDgsImFjc1Njb3BlIjoiY2hhdCx2b2lwIiwicmVzb3VyY2VJZCI6IjY0MDlkZTlmLWEwNzktNDYwNi1hNWYxLTE0ZDk3OWE4YWQ2MCIsInJlc291cmNlTG9jYXRpb24iOiJ1bml0ZWRzdGF0ZXMiLCJpYXQiOjE2Njk3Nzk4MDh9.AZ9OsXzhBAMQALcraeZbZyuvhICdz_rx84o-YUE-jtqetN0ZsKkvicj_u1yEDBwsXt_Oo7SRknmERPxIKm2g80705gKSVhG4MbQ2eV9gLmftEA1aHNNn_N0l2tiayHOUrKhA4dDko6Zsq8vqyA8SqxAqDA-WDVt8HYYHKdaLFjIVkCKmCejYm-W0Sa10Mv9PaIY2TgiM5aJ92M_7_OkJiFAoo1lmbZfDQ_lppvxwFajAngUcKbdVdRkC0hRLNmmdMCOMuoQl8t3Adjs2bUxgH33bmSoUYRO9SeSheksc-mfhGsCVOZmaai3Uw4xCpiwjgBzefpnfMLE7NkOXtFoOow" 
+            style="margin-bottom:1em; width: 500px;"/>
+        <button id="initialize-teams-call-agent" type="button">Get Ready for a call with Allan Deyoung</button>
+        <br>
+        <br>
+        <input type="hidden" id="callee-teams-user-id"
+            type="text"
+            placeholder="Microsoft Teams callee's id (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)"
+            value="8e685804-2d0f-4135-a548-52adb7e940f5"
+            style="margin-bottom:1em; width: 500px; display: block;"/>
+        <button id="start-call-button" type="button" disabled="true">Start Call</button>
+        <button id="hangup-call-button" type="button" disabled="true">Hang up Call</button>
+        <button id="accept-call-button" type="button" disabled="true">Accept Call</button>
+        <button id="start-video-button" type="button" disabled="true">Start Video</button>
+        <button id="stop-video-button" type="button" disabled="true">Stop Video</button>
+        <br>
+        <br>
+        <div id="connectedLabel" style="color: #13bb13;" hidden>Call is connected!</div>
+        <br>
+        <div id="remoteVideoContainer" style="width: 40%;" hidden>Remote participants' video streams:</div>
+        <br>
+        <div id="localVideoContainer" style="width: 30%;" hidden>Local video stream:</div>
+        <!-- points to the bundle generated from client.js -->
+        <script src="./bundle.js"></script>
+    </body>
+</html>
